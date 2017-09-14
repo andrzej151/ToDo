@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andrzejd.todo.DodajZadanie">
+
+
+
+    <Button
+        android:id="@+id/DodajZadanie"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Dodaj Zadanie"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        />
+
+
+
+    <Button
+        android:id="@+id/Edytuj"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Edytuj"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:layout_alignTop="@+id/DodajZadanie"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <Button
+        android:id="@+id/ToDo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/DodajZadanie"
+        android:layout_alignStart="@+id/DodajZadanie"
+        android:layout_below="@+id/DodajZadanie"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:text="To Do" />
+
+    <Button
+        android:id="@+id/ListaSukcesow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Lista Sukcesów"
+        android:layout_alignTop="@+id/ToDo"
+        android:layout_alignLeft="@+id/Edytuj"
+        android:layout_alignStart="@+id/Edytuj"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"/>
+
+
+    <Button
+        android:id="@+id/Ustawienia"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:text="Ustawienia"
+        android:layout_below="@+id/ToDo"
+        android:layout_alignLeft="@+id/ToDo"
+        android:layout_alignStart="@+id/ToDo"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/Autor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Autor"
+        android:layout_alignTop="@+id/Ustawienia"
+        android:layout_alignLeft="@+id/ListaSukcesow"
+        android:layout_alignStart="@+id/ListaSukcesow"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"/>
+</RelativeLayout>
+

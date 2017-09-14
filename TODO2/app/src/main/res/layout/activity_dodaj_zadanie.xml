@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    tools:context="com.example.andrzejd.todo.DodajZadanie">
+
+
+    <TextView
+        android:id="@+id/LZadanieGlowne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Zadanie Główne"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/ZadanieGlowne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LZadanieGlowne"
+        android:layout_alignStart="@+id/LZadanieGlowne"
+        android:layout_below="@+id/LZadanieGlowne"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/LNagroda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ZadanieGlowne"
+        android:layout_alignStart="@+id/ZadanieGlowne"
+        android:layout_below="@+id/ZadanieGlowne"
+        android:text="Nagroda"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Nagroda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LNagroda"
+        android:layout_alignStart="@+id/LNagroda"
+        android:layout_below="@+id/LNagroda"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/LCzasWykonywania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Nagroda"
+        android:layout_alignStart="@+id/Nagroda"
+        android:layout_below="@+id/Nagroda"
+        android:text="Czas wykonania"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/CzasHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LCzasWykonywania"
+        android:layout_alignStart="@+id/LCzasWykonywania"
+        android:layout_below="@+id/LCzasWykonywania"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/LCzasWykonywaniaDK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CzasHour"
+        android:layout_alignBottom="@+id/CzasHour"
+        android:layout_toEndOf="@+id/CzasHour"
+        android:layout_toRightOf="@+id/CzasHour"
+        android:text=":"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/CzasMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/LCzasWykonywaniaDK"
+        android:layout_alignBottom="@+id/LCzasWykonywaniaDK"
+        android:layout_toEndOf="@+id/LCzasWykonywaniaDK"
+        android:layout_toRightOf="@+id/LCzasWykonywaniaDK"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/LDedline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CzasHour"
+        android:layout_alignStart="@+id/CzasHour"
+        android:layout_below="@+id/CzasHour"
+        android:text="Dedline"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Dedline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LDedline"
+        android:layout_alignStart="@+id/LDedline"
+        android:layout_below="@+id/LDedline"
+        android:text=""
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/LPriorytet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ZadanieGlowne"
+        android:layout_alignBottom="@+id/ZadanieGlowne"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/ZadanieGlowne"
+        android:layout_toRightOf="@+id/ZadanieGlowne"
+        android:text="Priorytet"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/framePriLayout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/LPriorytet"
+        android:layout_alignLeft="@+id/LPriorytet"
+        android:layout_alignStart="@+id/LPriorytet">
+
+
+        <ImageView
+            android:id="@+id/Priorytet"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/LEtapyZadania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Dedline"
+        android:layout_alignStart="@+id/Dedline"
+        android:layout_below="@+id/Dedline"
+        android:text="Etapy Zadania"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/DodajZadanie"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ListaZadan"
+        android:layout_toEndOf="@+id/LZadanieGlowne"
+        android:layout_toRightOf="@+id/LZadanieGlowne"
+        android:background="@color/colorPrimary"
+        android:text="Dodaj  zadanie" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ListaZadan"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#FFF"
+        android:layout_below="@+id/LEtapyZadania"
+        android:layout_alignLeft="@+id/LEtapyZadania"
+        android:layout_alignStart="@+id/LEtapyZadania"
+        />
+
+    <Button
+        android:id="@+id/Zapisz"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ListaZadan"
+        android:layout_alignStart="@+id/ListaZadan"
+        android:layout_below="@+id/ListaZadan"
+        android:background="@color/colorPrimary"
+        android:text="Zapisz" />
+
+
+</RelativeLayout>
+

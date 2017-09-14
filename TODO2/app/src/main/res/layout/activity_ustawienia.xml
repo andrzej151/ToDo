@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andrzejd.todo.Ustawienia">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/Ustawienia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="ustawienia "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Upriorytet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Ustawienia"
+            android:layout_alignStart="@+id/Ustawienia"
+            android:layout_below="@+id/Ustawienia"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="1"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/priorytet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Upriorytet"
+            android:layout_alignBottom="@+id/Upriorytet"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/Upriorytet"
+            android:layout_toRightOf="@+id/Upriorytet"
+            android:text="Priorytet"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Udedline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Upriorytet"
+            android:layout_alignStart="@+id/Upriorytet"
+            android:layout_below="@+id/Upriorytet"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="2"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/dedline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Udedline"
+            android:layout_alignBottom="@+id/Udedline"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/Udedline"
+            android:layout_toRightOf="@+id/Udedline"
+            android:text="Dedline"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Uczas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Udedline"
+            android:layout_alignStart="@+id/Udedline"
+            android:layout_below="@+id/Udedline"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="3"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Zapisz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Zapisz"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/Uczas"
+            android:layout_alignLeft="@+id/Uczas"
+            android:layout_alignStart="@+id/Uczas" />
+
+
+        <TextView
+            android:id="@+id/Czas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Uczas"
+            android:layout_alignBottom="@+id/Uczas"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/Uczas"
+            android:layout_toRightOf="@+id/Uczas"
+            android:text="Czas Wykonania"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Wyczysc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#AA0000"
+            android:text="Wyczyść dane aplikacji"
+            android:textColor="#FFFFFF"
+            android:layout_alignBaseline="@+id/Zapisz"
+            android:layout_alignBottom="@+id/Zapisz"
+            android:layout_alignLeft="@+id/Czas"
+            android:layout_alignStart="@+id/Czas" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

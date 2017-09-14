@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    tools:context="com.example.andrzejd.todo.DodajZadanie">
+
+
+    <TextView
+        android:id="@+id/LZadanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Zadanie"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/Etap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LZadanie"
+        android:layout_alignStart="@+id/LZadanie"
+        android:layout_below="@+id/LZadanie"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/LCzasWykonywania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Etap"
+        android:layout_alignStart="@+id/Etap"
+        android:layout_below="@+id/Etap"
+        android:text="Czas wykonania"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/CzasHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LCzasWykonywania"
+        android:layout_alignStart="@+id/LCzasWykonywania"
+        android:layout_below="@+id/LCzasWykonywania"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/LczasWykonywaniaDK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CzasHour"
+        android:layout_alignBottom="@+id/CzasHour"
+        android:layout_toEndOf="@+id/CzasHour"
+        android:layout_toRightOf="@+id/CzasHour"
+        android:text=":"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/CzasMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/LczasWykonywaniaDK"
+        android:layout_alignBottom="@+id/LczasWykonywaniaDK"
+        android:layout_toEndOf="@+id/LczasWykonywaniaDK"
+        android:layout_toRightOf="@+id/LczasWykonywaniaDK"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/Lpriorytet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CzasHour"
+        android:layout_alignStart="@+id/CzasHour"
+        android:layout_below="@+id/CzasHour"
+        android:text="Priorytet"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/framePriLayout"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/Lpriorytet"
+        android:layout_alignStart="@+id/Lpriorytet"
+        android:layout_below="@+id/Lpriorytet">
+
+
+        <ImageView
+            android:id="@+id/Priorytet"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical" />
+
+    </FrameLayout>
+
+</RelativeLayout>
+
